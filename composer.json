@@ -1,0 +1,14 @@
+{
+    "require": {
+        "slim/slim": "2.*",
+        "twig/twig": "*",
+        "slim/views": "*",
+        "illuminate/database": "*",
+        "fzaninotto/faker": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}

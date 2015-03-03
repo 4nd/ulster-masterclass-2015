@@ -1,0 +1,15 @@
+{% extends "layout.twig" %}
+{% block content %}
+    {% for post in posts %}
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-responsive" src="{{ post.image }}" alt=""/>
+            </div>
+            <div class="col-sm-8">
+                <h2>{{ post.title }}</h2>
+                <h3>{{ post.created_at.diffForHumans() }}</h3>
+                <p>{{ post.summary }}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
